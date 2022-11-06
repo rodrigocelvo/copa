@@ -8,7 +8,7 @@ import { Button } from '../components/Button';
 export function Find() {
   return (
     <VStack flex={1} bg="gray.900">
-      <Header showBackButton title="Criar novo bolão" />
+      <Header showBackButton title="Buscar por código" />
 
       <VStack mt={8} mx={5} alignItems="center">
         <Heading
