@@ -17,7 +17,7 @@ async function main() {
       code: 'BOL123',
       ownerId: user.id,
 
-      participant: {
+      participants: {
         create: {
           userId: user.id,
         },
@@ -41,8 +41,8 @@ async function main() {
 
       guesses: {
         create: {
-          firstTeamPoint: 2,
-          secondTeamPoint: 1,
+          firstTeamPoints: 2,
+          secondTeamPoints: 1,
 
           participant: {
             connect: {
