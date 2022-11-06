@@ -1,10 +1,10 @@
 import { Heading, HStack, Text, VStack } from 'native-base';
 
-import { PoolPros } from './PoolCard';
+import { PoolCardProps } from './PoolCard';
 import { Participants } from './Participants';
 
 interface Props {
-  data: PoolPros;
+  data: PoolCardProps;
 }
 
 export function PoolHeader({ data }: Props) {
@@ -18,8 +18,7 @@ export function PoolHeader({ data }: Props) {
       justifyContent="space-between"
       alignItems="center"
       mb={3}
-      p={4}
-    >
+      p={4}>
       <VStack>
         <Heading color="white" fontSize="md" fontFamily="heading">
           {data.title}
